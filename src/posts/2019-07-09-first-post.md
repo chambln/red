@@ -6,13 +6,17 @@ description: |
     A short document for illustrative purposes.
 ---
 
-Second level heading
---------------------
+Example post
+------------
 
 This is an example post.
+Write your posts in pandoc's markdown format.
 
-- one
-- two
-- three
+### Mathematical notation
 
-$$ e^{i\theta} = \cos\theta + i\sin\theta $$
+By default, Pandoc renders TeX equations as best it can with just
+unicode and html.
+$$ e^{i\theta} = \cos\theta + i\sin\theta. $$
+
+It also supports JavaScript libraries like MathJax, you'd just have to
+edit the Makefile to give Pandoc the appropriate command-line arguments.
