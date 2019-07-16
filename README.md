@@ -1,10 +1,10 @@
-# `red` -- static site generator
+# red — static site generator
 
 This is really just a makefile that turns Markdown and Sass into HTML
 and CSS to produce a simple static blog.
-Posts (`src/posts/YYYY-MM-DD-*.md -> *.html`) are automatically listed
+Posts (`src/posts/YYYY-MM-DD-*.md → *.html`) are automatically listed
 in chronological order in a section appended to the root page
-(`index.md -> index.html`).
+(`index.md → index.html`).
 
 ## Dependencies
 
