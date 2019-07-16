@@ -11,8 +11,8 @@ A few similar tools I've seen are [bake][1], [pdsite][2], and
 [tundra.sh][3].
 
 [1]: https://github.com/fcanas/bake
-[2]: http://pdsite.org/running/
-[3]: https://frainfreeze.github.io/tundra/
+[2]: http://pdsite.org
+[3]: https://frainfreeze.github.io/tundra
 
 ## Dependencies
 
