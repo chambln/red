@@ -2,9 +2,17 @@
 
 This is really just a makefile that turns Markdown and Sass into HTML
 and CSS to produce a simple static blog.
+There are no shell scripts or binaries.
 Posts (`src/posts/YYYY-MM-DD-*.md → *.html`) are automatically listed
 in chronological order in a section appended to the root page
 (`index.md → index.html`).
+
+A few similar tools I've seen are [bake][1], [pdsite][2], and
+[tundra.sh][3].
+
+[1]: https://github.com/fcanas/bake
+[2]: http://pdsite.org/running/
+[3]: https://frainfreeze.github.io/tundra/
 
 ## Dependencies
 
