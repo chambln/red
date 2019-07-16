@@ -7,8 +7,8 @@ Markdown files under the `src/` directory are turned into HTML pages
 using pandoc.
 Just edit these to your liking.
 Markdown files under `src/posts/` are generated the same way, but also
-used to generate the archive list, which is included at the end of the
-index.
+used to generate the archive list, which is included at the end of this
+page.
 
 The header and footer are the only HTML files written 'by hand'.
 They are included in every page when the site is generated.
