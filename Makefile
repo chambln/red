@@ -27,11 +27,15 @@ tmp/%.html: src/posts/%.md
 
 %.html: src/posts/%.md
 	pandoc $< -so $@ \
+		-B src/header.html \
+		-A src/footer.html \
 		--template=template/post \
 		--css=main.css
 
 %.html: src/%.md
 	pandoc $< -so $@ \
+		-B src/header.html \
+		-A src/footer.html \
 		--template=template/post \
 		--css=main.css
 
