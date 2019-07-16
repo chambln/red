@@ -6,9 +6,10 @@ description: |
     Another example with more explanations.
 ---
 
-The Makefile processes files in alphabetical order, so if you want your
-posts to appear in chronological order in the archive list, you must
-name your files with the date at the front, in a format such as
+The Makefile uses the shell command `sort -r` to process posts in
+reverse alphabetical order, so if you want your posts to appear in
+reverse chronological order in the archive list, you must name your
+files with the date at the front, in a format such as
 `YYYY-MM-DD-*.md`.
 
 Pandoc, however, will print the date that you provide in the YAML

@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-src_posts := $(wildcard src/posts/*.md)
+src_posts := $(shell ls src/posts/*.md | sort -r)
 obj_posts := $(src_posts:src/posts/%.md=%.html)
 src_pages := $(wildcard src/*.md)
 obj_pages := $(src_pages:src/%.md=%.html)
