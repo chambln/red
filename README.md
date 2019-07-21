@@ -6,9 +6,12 @@ There are no scripts or binaries.
 
 A brief summary of the Makefile is this:
 
-    src/*.md        →  *.html
-    src/posts/*.md  →  *.html
-    src/main.sass   →  main.css
+    src/*.md         →  *.html
+    src/posts/*.md   →  *.html
+    src/main.sass    →  main.css
+
+    src/header.html     Prepended to every page
+    src/footer.html     Appended to every page
 
 Posts are automatically listed in a section appended to the index page
 (`src/index.md → index.html`).
