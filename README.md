@@ -34,8 +34,8 @@ To build the style sheet, you need a Sass preprocessor such as `sassc`
 
 ## Usage
 
-Edit files within the `src/` directory to determine the site's content.
-Then build:
+Edit and create files within the `src/` directory to determine the
+site's content.  Then build:
 
     make
 
