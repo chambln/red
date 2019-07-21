@@ -1,6 +1,6 @@
 # red — static site generator
 
-This is really just a makefile that turns Markdown and Sass into HTML
+This is really just a makefile for turning Markdown and Sass into HTML
 and CSS to produce a simple static blog.
 There are no scripts or binaries.
 
