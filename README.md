@@ -2,10 +2,18 @@
 
 This is really just a makefile that turns Markdown and Sass into HTML
 and CSS to produce a simple static blog.
-There are no shell scripts or binaries.
-Posts (`src/posts/YYYY-MM-DD-*.md → *.html`) are automatically listed
-in chronological order in a section appended to the root page
-(`index.md → index.html`).
+There are no scripts or binaries.
+
+A brief summary of the Makefile is this:
+
+    src/*.md        →  *.html
+    src/posts/*.md  →  *.html
+    src/main.sass   →  main.css
+
+Posts are automatically listed in a section appended to the index page
+(`src/index.md → index.html`).
+The list is sorted alphabetically, so if you name your posts in the
+form `YYYY-MM-DD-*.md`, they will be listed in chronological order.
 
 A few similar tools I've seen are [bake][1], [pdsite][2], and
 [tundra.sh][3].
