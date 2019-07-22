@@ -1,4 +1,4 @@
-# red — static site generator
+# red – static site generator
 
 This is really just a makefile for turning Markdown and Sass into HTML
 and CSS to produce a simple static blog.
