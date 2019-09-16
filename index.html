@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Site title</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="main.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="header">
+    <ol>
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="about.html">About</a> </li>
+        <li> <a href="contact.html">Contact</a> </li>
+    </ol>
+</nav>
+<hr/>
+<header id="title-block-header">
+<h1 class="title">Site title</h1>
+</header>
+<p>This is the root page of the site. Markdown files under the <code>src/</code> directory are turned into HTML pages using pandoc. Just edit these to your liking. Markdown files under <code>src/posts/</code> are generated the same way, but also used to generate the archive list, which is included at the end of this page.</p>
+<p>The header and footer are the only HTML files written ‘by hand’. They are included in every page when the site is generated. Edit <code>src/*.html</code> to change their contents.</p>
+<p>Edit <code>src/main.sass</code> to change the site’s stylesheet. It gets processed into <code>main.css</code> using the <code>sassc</code> preprocessor. To use a different Sass implementation, specify its executable in the <code>Makefile</code>.</p>
+<ol class="archive-list" reversed="true">
+<li>
+<h3 class="title">
+<a href="2019-07-10-second-post.html">Second post</a>
+</h3>
+<p class="author">
+Author’s name
+</p>
+<p class="date">
+10th July 2019
+</p>
+<p class="description">
+<p>
+Another example with more explanations.
+</p>
+</p>
+</li>
+<li>
+<h3 class="title">
+<a href="2019-07-09-first-post.html">First post</a>
+</h3>
+<p class="author">
+Author’s name
+</p>
+<p class="date">
+9th July 2019
+</p>
+<p class="description">
+<p>
+A short document for illustrative purposes.
+</p>
+</p>
+</li>
+</ol>
+<hr/>
+<p id="footer">
+    Footer content goes here.
+    Edit <code>src/footer.html</code>.
+</p>
+</body>
+</html>
