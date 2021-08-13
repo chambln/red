@@ -51,3 +51,6 @@ www/%.css: src/%.sass
 
 clean:
 	rm -fr tmp/ www/
+
+deploy:
+	rsync -rv www/ cosine.blue:www/red/
