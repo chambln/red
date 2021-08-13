@@ -14,7 +14,7 @@ www/index.html: src/index.md tmp/archive.html
 		-B src/header.html \
 		-A tmp/archive.html \
 		-A src/footer.html \
-		--css=/main.css
+		--css=main.css
 
 archive_li := $(src_posts:src/posts/%.md=tmp/%.html)
 
@@ -35,7 +35,7 @@ www/%.html: src/posts/%.md
 		-B src/header.html \
 		-A src/footer.html \
 		--template=template/post \
-		--css=/main.css
+		--css=main.css
 
 www/%.html: src/%.md
 	mkdir -p www/
@@ -43,7 +43,7 @@ www/%.html: src/%.md
 		-B src/header.html \
 		-A src/footer.html \
 		--template=template/post \
-		--css=/main.css
+		--css=main.css
 
 www/%.css: src/%.sass
 	mkdir -p www/
