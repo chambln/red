@@ -8,9 +8,9 @@ Go to <https://cosine.blue/red/> to see the result.
 
 A brief summary of the Makefile is this:
 
-    src/*.md         →  *.html
-    src/posts/*.md   →  *.html
-    src/main.sass    →  main.css
+    src/*.md         →  www/*.html
+    src/posts/*.md   →  www/*.html + www/index.html
+    src/main.sass    →  www/main.css
 
     src/header.html     Prepended to every page
     src/footer.html     Appended to every page

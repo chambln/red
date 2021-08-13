@@ -2,49 +2,52 @@
 # See LICENSE file for copyright and license details.
 
 src_posts := $(shell ls src/posts/*.md | sort -r)
-obj_posts := $(src_posts:src/posts/%.md=%.html)
+obj_posts := $(src_posts:src/posts/%.md=www/%.html)
 src_pages := $(wildcard src/*.md)
-obj_pages := $(src_pages:src/%.md=%.html)
+obj_pages := $(src_pages:src/%.md=www/%.html)
 
-all: $(obj_pages) main.css
+all: $(obj_pages) www/main.css
 
-index.html: src/index.md archive.html
+www/index.html: src/index.md tmp/archive.html
+	mkdir -p www/
 	pandoc $< -so $@ \
 		-B src/header.html \
-		-A archive.html \
+		-A tmp/archive.html \
 		-A src/footer.html \
-		--css=main.css
+		--css=/main.css
 
 archive_li := $(src_posts:src/posts/%.md=tmp/%.html)
 
-archive.html: $(archive_li) $(obj_posts)
-	cat $(archive_li) | pandoc -o archive.html \
+tmp/archive.html: $(archive_li) $(obj_posts)
+	cat $(archive_li) | pandoc -o tmp/archive.html \
 		--metadata pagetitle="Archive" \
 		--template=template/archive
 
 tmp/%.html: src/posts/%.md
-	@mkdir -pv tmp/
+	mkdir -p tmp/
 	pandoc $< -o $@ \
 		--template=template/archive-li \
 		--variable=filename:$(notdir $@)
 
-%.html: src/posts/%.md
+www/%.html: src/posts/%.md
+	mkdir -p www/
 	pandoc $< -so $@ \
 		-B src/header.html \
 		-A src/footer.html \
 		--template=template/post \
-		--css=main.css
+		--css=/main.css
 
-%.html: src/%.md
+www/%.html: src/%.md
+	mkdir -p www/
 	pandoc $< -so $@ \
 		-B src/header.html \
 		-A src/footer.html \
 		--template=template/post \
-		--css=main.css
+		--css=/main.css
 
-%.css: src/%.sass
+www/%.css: src/%.sass
+	mkdir -p www/
 	sassc $< -at compressed > $@
 
 clean:
-	@rm -fv *.html *.css
-	@rm -frv tmp/
+	rm -fr tmp/ www/
