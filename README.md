@@ -4,7 +4,7 @@ This is really just a makefile for turning Markdown and Sass into HTML
 and CSS to produce a simple static blog.
 There are no scripts or binaries.
 
-Go to <https://cosine.blue/red/> to see the result.
+A demo of the generated site template is available at <https://cosine.blue/red/>.
 
 A brief summary of the Makefile is this:
 
